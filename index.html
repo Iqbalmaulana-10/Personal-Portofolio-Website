@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iqbal Maulana | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at left, #3a47ff, #020617 60%);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .wrapper {
+      animation: fadeUp 1.2s ease forwards;
+      opacity: 0;
+
+      width: 90%;
+      max-width: 1100px;
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    /* LEFT */
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .profile img {
+      width: 260px;
+      height: 340px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+      margin-bottom: 25px;
+    }
+
+    .hello {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .name {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    /* RIGHT */
+    .content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .about {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #d1d5db;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .section h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .section p {
+      font-size: 14px;
+      color: #cbd5f5;
+      margin: 4px 0;
+    }
+
+    .social {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .social a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.08);
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      transition: 0.3s;
+    }
+
+    .social a:hover {
+      background: rgba(255,255,255,0.18);
+    }
+
+    .social img {
+      width: 18px;
+      height: 18px;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 900px) {
+      .wrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <!-- LEFT -->
+    <div class="profile">
+      <img src="Foto Iqbal Maulana.jpg" alt="Foto Iqbal" class="profile-img">
+      <div class="hello">Hello, I am</div>
+      <div class="name">Iqbal Maulana</div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="content">
+      <h2>About Me</h2>
+      <p class="about">
+  I am a graduate of Computer and Network Engineering (2025) with basic skills in the IT field. 
+  I have a strong interest in technology, computer systems, and network troubleshooting. 
+  I am accustomed to working with laptops, learning new things, and adapting quickly to dynamic work environments. 
+  I am highly motivated to continuously improve both my technical abilities and soft skills in order to deliver the best contribution.
+</p>
+
+      <div class="section">
+        <h3>Education</h3>
+        <p>2022 – 2025</p>
+        <p>Teknik Komputer dan Jaringan</p>
+        <p>SMK Voctech 2</p>
+      </div>
+
+      <div class="section">
+        <h3>Address</h3>
+        <p>Jl. Udayana Ujung RT.007/RW.005</p>
+        <p>Cibodas, Kec. Cibodas Baru</p>
+        <p>Kota Tangerang, Banten 15138</p>
+      </div>
+
+      <div class="social">
+        <a href="https://instagram.com/1kbalsih" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+          <span>@1kbalsih</span>
+        </a>
+        <a href="https://wa.me/6283826569547" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+          <span>0838‑2656‑9547</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
